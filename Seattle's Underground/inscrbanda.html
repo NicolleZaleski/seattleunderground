@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrição - Seattle's Underground</title>
+    <title>Inscrição das Bandas - Seattle's Underground</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./inscricao.css">
     
@@ -25,24 +25,27 @@
     </div>
 
     <div class="conteudo">
-        <h1 class="titulo-princ">Inscreva-se no Evento</h1>
+        <h1 class="titulo-princ">Inscreva a sua Banda</h1>
         <div class="container">
             <form id="formInscricao">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" required placeholder="Digite o seu nome."><br>
+                <label for="nome">Nome da Banda:</label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite o nome da banda."><br>
+
+                <label for="nome">Número de Integrantes:</label>
+                <input type="number" name="quantidade" id="quantidade" required placeholder="Digite o número de integrantes."><br>
                 
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required placeholder="Digite o seu email."><br>
+                <label for="email">Email do Responsável:</label>
+                <input type="email" name="email" id="email" required placeholder="Digite o email do responsável."><br>
                 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" name="telefone" max="15" id="telefone" required placeholder="Digite o seu telefone."><br>
+                <label for="telefone">Telefone do Responsável:</label>
+                <input type="tel" name="telefone" max="15" id="telefone" required placeholder="Digite o telefone do responsável."><br>
                 
-                <button type="button" onclick="inscrever()">Inscrever-se</button><br>
+                <button type="button" onclick="inscrever()">Inscrever</button><br>
             </form>
         </div>
         <p id="mensagem"></p>
     </div>
 
-    <script src="./inscricao.js"></script>
+    <script src="./inscrbanda.js"></script>
 
 </body>
