@@ -1,0 +1,166 @@
+@import url(./index.css);
+@import url(./inscricao.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sidebar{
+    width: 500px;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    position: fixed;
+    padding: 10px;
+    margin: 0;
+    z-index: 0;
+    justify-content: center;
+}
+
+.logo{
+    height: auto;
+    width: 85%;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    z-index: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.link-menu{
+    font-size: 20px;
+    color: rgb(183, 178, 171);
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.link-menu:hover{
+    color: rgb(139,51,17);
+}
+
+.btn-inscricao{
+   background-color: black; 
+   color: rgb(183, 178, 171);
+   border: none;
+   cursor: pointer;
+   font-size: 24px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-inscricao:hover{
+    color: rgb(139,51,17);
+}
+
+footer{
+    width: 500px;
+    background-color: black;
+    color: rgb(139,51,17);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(139,51,17);
+}
+
+footer a:hover{
+    color: rgb(183, 178, 171);
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:  rgb(183, 178, 171);
+    border-radius: 10px;
+
+}
+
+@media (max-width: 1000px) {
+    .sidebar{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        align-items: flex-start;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+    .area-principal{
+        margin-left: 350px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        float: lef[];
+    }
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+   footer{
+    width: 300px;
+    left: 0;
+    right: 0;
+   }
+}
+
+
+@media (max-width: 730px) {
+    .sidebar{
+        width: 200px;
+        height: 100%;
+        gap: 50px;
+    }
+    .area-principal{
+        margin-left: 250px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+
+    .link-menu{
+        font-size: 15px;
+    }
+
+    .btn-inscricao{
+        font-size: 15px;
+    }
+    footer{
+        width: 200px;
+        left: 0;
+        right: 0;
+       }
+}
