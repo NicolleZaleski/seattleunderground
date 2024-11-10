@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Seattle's Underground</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./inscricao.css">
+    
+</head>
+
+<body>
+    <div class="conteudos">
+        <nav class="sidebar">
+            <img src="./logo2.jpg" alt="" class="logo">
+            <ul class="menu">
+                <li class="item-menu"><a href="./index.html" class="link-menu">HOME</a></li>
+                <li class="item-menu"><a href="./about.html" class="link-menu">SOBRE NÓS</a></li>
+                <li class="item-menu"><a href="./inscricao.html" class="link-menu">INSCREVA-SE</a></li>
+            </ul>
+            <footer>
+                <p>Precisa de ajuda ou conhece alguém que precise de apoio emocional? <a href="https://cvv.org.br/">Disque 188</a> para suporte gratuito e confidencial.</p>
+            </footer>
+        </nav>
+    </div>
+
+    <div class="conteudo">
+        <h1 class="titulo-princ">Inscreva-se no Evento</h1>
+        <div class="container">
+            <form id="formInscricao">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite o seu nome."><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Digite o seu email."><br>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" max="15" id="telefone" required placeholder="Digite o seu telefone."><br>
+                
+                <button type="button" onclick="inscrever()">Inscrever-se</button><br>
+            </form>
+        </div>
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="./inscricao.js"></script>
+
+</body>
